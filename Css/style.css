@@ -1,0 +1,548 @@
+@import url("../assets/fonts/stylesheet.css");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url("../assets/image/background.png") no-repeat center top;
+    background-size: cover;
+}
+
+.content {
+    position: absolute;
+    left: 24px;
+    right: 24px;
+    height: 100%;
+}
+
+h1 {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+p {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+
+
+.crossWrapper{
+    margin-top: 64px;
+}
+
+.exitCross{
+    background-image: url("../assets/image/cross.png");
+    width: 24px;
+    height: 24px;
+}
+
+.titleWrapper{
+    margin-top: 178px;
+
+
+}
+
+.title{
+    font-family: "SF Pro Display" ;
+    font-weight: 860;
+    font-size: 42px;
+    line-height: 46px;
+    text-align: center;
+    color: #ffffff;
+
+}
+
+
+
+.featuresWrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    width: 342px;
+    height: 146px;
+}
+
+.features{
+    width: 110px;
+    height: 146px;
+    display: flex;
+    justify-content: left;
+    align-items: end;
+}
+.featuresText{
+    font-family: "SF Pro Display";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    vertical-align: bottom;
+    color: #ffffff;
+    margin-left: 8px;
+    margin-bottom: 12px;
+}
+
+#featuresFirst{
+    background-image: url("../assets/image/bgUnlimited.png");
+}
+
+#featuresSecond{
+    background-image: url("../assets/image/bgExclusive.png");
+}
+
+#featuresThird{
+    background-image: url("../assets/image/bgMagic.png");
+}
+
+
+.buttonsWrapper{
+margin-top: 34px;
+}
+
+.buttonFirstWrapper{
+    width: 342px;
+    height: 56px;
+}
+
+.buttonFirstContainer{
+    position: relative;
+    width: 100%;
+    height: 56px;
+    background-color: #24212E;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 100px;
+    padding: 9px 56px 9px 24px;
+    box-sizing: border-box;
+}
+
+.active{
+    background-color: #54535A;
+    border: 1px solid white;
+}
+
+.buttonFirsMainTextWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 142px;
+    height: 38px;
+}
+
+.buttonFirstMainTextTitle{
+    font-family: SF Pro Display;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 100%;
+    opacity: 1;
+
+}
+
+.buttonFirstMainSecondTextPrice{
+    font-family: SF Pro Display;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: rgba(255, 255, 255, 1);
+    height: 19px;
+    opacity: 0.7;
+    width: 143px ;
+}
+
+.buttonFirstTextPrice{
+    font-family: SF Pro Display;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonFirstBestOffer{
+    position: absolute;
+    top: -12px;
+    right: 16px;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(90deg, #BC1FEF 0%, #0035FF 100%);
+    border-radius: 999px;
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.4959);
+
+}
+
+.activeBestOffer{
+    background: rgba(255, 255, 255, 1);
+    color: rgba(20, 17, 49, 1);
+}
+
+.buttonFirstContainerBefore::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    border-radius: 100px;
+    padding: 1px;
+
+    background: linear-gradient(
+            186deg,
+            #0035FF,
+            #BC1FEF,
+
+            transparent 30%
+    );
+
+    -webkit-mask:
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+
+    pointer-events: none;
+}
+
+.buttonFirstContainerBefore.active::before {
+    background: linear-gradient(
+            90deg,
+            #ffffff,
+            #ffffff,
+            #ffffff
+    );
+
+}
+
+.buttonSecondWrapper{
+    margin-top: 8px;
+    width: 342px;
+}
+
+#buttonSecondMainTextWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonContinueWrapper{
+    margin-top: 16px;
+    position: relative;
+    width: 342px;
+    height: 56px;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    box-sizing: border-box;
+}
+
+.buttonContinueText{
+    font-family: SF Pro Display;
+    font-weight: 590;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: rgba(7, 11, 51, 1);
+}
+
+.footerWrapper{
+    opacity: 0.3;
+    margin-top: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer{
+    width: 281px;
+    height: 18px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.linksContainer{
+    width: 68px;
+    height: 18px;
+
+}
+
+.link{
+    opacity: 0.8;
+    font-family: SF Pro Display;
+    font-weight: 200;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    color: rgba(255, 255, 255, 1);
+}
+
+.lang-fr .title {
+    font-size: 39px;
+}
+
+.lang-pt .title {
+    font-size: 42px;
+}
+
+/*iphone 8*/
+@media (max-width: 375px){
+
+
+    .crossWrapper{
+        margin-top: 16px;
+    }
+
+    .titleWrapper{
+        margin-top: 95px;
+    }
+
+   .featuresWrapper{
+       width: 326px;
+       height: 139px;
+   }
+
+   .features{
+       width: 106px;
+   }
+
+   .buttonFirstContainer{
+       width: 327px;
+   }
+
+   .buttonContinueWrapper{
+       margin-top: 8px;
+       width: 327px;
+   }
+
+    .lang-fr .title {
+        font-size: 25px;
+    }
+
+    .lang-pt .title {
+        font-size: 25px;
+    }
+
+}
+
+/*iphone 8+*/
+
+@media (min-width: 414px) and (min-height: 736px){
+
+
+    .crossWrapper{
+        margin-top: 64px;
+    }
+
+    .titleWrapper{
+        margin-top: 95px;
+    }
+
+    .featuresWrapper{
+        /*width: 326px;*/
+        /*height: 139px;*/
+        margin: 24px auto;
+    }
+
+    .buttonsWrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttonContinueWrapper{
+        margin: 16px auto;
+    }
+
+    .lang-fr .title {
+        font-size: 25px;
+    }
+
+    .lang-pt .title {
+        font-size: 25px;
+    }
+
+}
+
+/*iphone X*/
+
+@media (max-width: 375px ) and (min-height: 812px) {
+
+
+    .crossWrapper{
+        margin-top: 64px;
+    }
+
+    .titleWrapper{
+        margin-top: 178px;
+    }
+
+    .featuresWrapper{
+        width: 326px;
+        height: 139px;
+    }
+
+    .features{
+        width: 106px;
+    }
+
+    .buttonFirstContainer{
+        width: 327px;
+    }
+
+    .buttonContinueWrapper{
+        margin-top: 16px;
+        width: 327px;
+    }
+
+
+}
+
+
+/*language*/
+
+.lang-de .title {
+    font-size: 25px;
+}
+
+.lang-de .featuresText {
+}
+
+.lang-de .buttonFirstMainTextTitle {
+    font-size: 14px;
+}
+
+.lang-de .buttonFirstMainSecondTextPrice {
+}
+
+.lang-de .buttonFirstTextPrice {
+}
+
+.lang-de .buttonContinueText {
+}
+
+.lang-de .link {
+    font-size: 11px;
+}
+
+.lang-es .footer{
+    width: 350px;
+}
+
+.lang-es .footer :nth-child(2){
+    margin-left: 13px;
+}
+
+.lang-es .linksContainer{
+    width: 123px;
+}
+
+
+.lang-fr .buttonFirstMainTextTitle {
+    font-size: 14px;
+}
+
+.lang-fr .buttonFirstMainSecondTextPrice {
+    font-size: 13px;
+}
+
+.lang-fr .link {
+    font-size: 11px;
+}
+
+.lang-fr .footer{
+    width: 350px;
+}
+
+.lang-fr .footer :nth-child(1){
+    width: 100px;
+}
+
+.lang-fr .footer :nth-child(3){
+    width: 100px;
+    margin-right: -20px;
+
+}
+
+.lang-fr .footer :nth-child(2){
+    width: 123px;
+
+    margin-left: 20px;
+}
+
+
+.lang-fr .footerWrapper{
+    opacity: 0.6;
+}
+
+
+.lang-ja .footer{
+    width: 350px;
+}
+
+.lang-ja .footer :nth-child(1){
+    width: 100px;
+}
+
+.lang-ja .footer :nth-child(3){
+    width: 100px;
+
+}
+
+.lang-ja .footer :nth-child(2){
+    width: 130px;
+}
+
+.lang-ja .buttonFirstTextPrice{
+    align-items: center;
+}
+
+.lang-pt .footer{
+    width: 350px;
+}
+
+.lang-pt .footer :nth-child(1){
+    width: 100px;
+}
+
+.lang-pt .footer :nth-child(3){
+    width: 100px;
+    margin-right: -20px;
+}
+
+.lang-pt .footer :nth-child(2){
+    width: 130px;
+    margin-left: 10px;
+}
+
+.lang-pt .buttonFirstMainSecondTextPrice{
+    font-size: 14px;
+}
+
+.lang-pt #featuresThird :last-child {
+    font-size: 11px;
+}
+
+
+
+
